@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<h1>Type a word and click submit</h1>
+		<form action="." method="POST">{% csrf_token %}
+			<label for="word">Value: </label>
+			<input name="word" id="word" placeholder="Type here..." />
+			<br/>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
