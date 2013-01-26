@@ -5,8 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^post-and-get-example/', include('post_and_get_request_example.urls')),
-	url(r'^pagination-example/', include('pagination_example.urls')),
+	url(r'^$', 'pagination_example.views.home', name="pagination_example"),
 
     # Examples:
     # url(r'^$', 'django_ejemplos.views.home', name='home'),
